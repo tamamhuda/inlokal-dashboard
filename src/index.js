@@ -18,8 +18,8 @@ root.render(
       <Provider store={store}>
         <HelmetProvider context={helmetContext}>
           <PersistGate loading={null} persistor={persistor}>
-            {/* <App /> */}
-            <HooksLearn />
+            <App />
+            {/* <HooksLearn /> */}
           </PersistGate>
         </HelmetProvider>
       </Provider>

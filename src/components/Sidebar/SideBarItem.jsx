@@ -10,7 +10,6 @@ const SideBarItem = ({
   sidebarActive,
   path,
 }) => {
-  console.log("render sidebar item");
   return (
     <Link to={path}>
       <li

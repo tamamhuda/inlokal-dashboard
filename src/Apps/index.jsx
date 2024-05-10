@@ -23,14 +23,15 @@ const Apps = ({ children, type }) => {
   );
   const dispatch = useDispatch();
 
+  useLayoutEffect(() => {
+    if (type) {
+      dispatch(setActive(type));
+    } else dispatch(setActive("dashboard"));
+  }, []);
+
   // useEffect(() => {
-  //   if (type) {
-  //     dispatch(setActive(type));
-  //   } else dispatch(setActive("dashboard"));
+
   // }, []);
-  // useEffect(() => {
-  //   console.log(sidebarActive);
-  // }, [sidebarActive]);
 
   // useEffect(() => {
 
